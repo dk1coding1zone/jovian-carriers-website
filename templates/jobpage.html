@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{job.title}}-jovians career</title>
+  {% include 'bootstrap.html' %}
+</head>
+<body>
+  {% include 'navbar.html' %}
+  {% include 'banner.html' %}
+  <div class = "container">
+
+  <h1 class="text-center mt-2 mb-4" style="margin-bottom:16px"> Jovian Careers</h1>
+  <h3 class='mb-2'>{{job.title}}</h3>
+  <p class="lead">{{job.location}}</p>
+  <h3>Responsibilities</h3>
+  <ul>
+    {% for line in job.responsibities.split("\n") %}
+    <li>{{line}}</li>
+    {% endfor %}
+  </ul>  
+  <p>{{job.responsibities}}</p>
+  <h3>Requirements</h3>
+    <ol>
+      {% for line in job.requirements.split("\n") %}
+      <li>{{line}}</li>
+      {% endfor %}
+    </ol>
+    <h3>Salary</h3>
+    <p>{{job.currency}}{{job.salary}}</p>
+  {% include 'footer.html' %}
+  </div>
+</body>
+</html>

@@ -2,10 +2,16 @@
   "files": {
     "templates/home.html": [
       {
+        "id": "9a29b147-027d-42ab-85d1-a15f7965f797",
+        "line": 6,
+        "version": 929,
+        "index": 99
+      },
+      {
         "id": "ec7f2fd0-e7d9-4c99-9de3-1d7cf2159689",
-        "line": 18,
-        "version": 915,
-        "index": 656
+        "line": 10,
+        "version": 926,
+        "index": 145
       }
     ]
   }
